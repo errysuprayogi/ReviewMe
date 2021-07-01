@@ -28,4 +28,5 @@ android_lint.lint(inline_mode: true)
 kotlin_detekt.filtering = true
 kotlin_detekt.gradle_task = "detektCheck"
 kotlin_detekt.report_file = "build/reports/detekt/detekt.xml"
+kotlin_detekt.severity = ["warning", "error"]
 kotlin_detekt.detekt(inline_mode: true)
