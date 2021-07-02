@@ -39,7 +39,7 @@ apply plugin: 'io.gitlab.arturbosch.detekt'
 
 def projectSource = file(projectDir)
 def sourceSet = new File("$rootDir/sourceset.txt") as String[]
-def configFile = files("$rootDir/config/detekt.yml")
+def configFile = files("$rootDir/config/detekt-toped.yml")
 def baselineFile = file("$rootDir/config/baseline.xml")
 
 tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
