@@ -11,7 +11,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.2.0"
 //        classpath "gradle.plugin.org.jlleitschuh.gradle:ktlint-gradle:3.0.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.17.1"
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.15.0"
     }
 }
 
@@ -55,12 +55,10 @@ tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
         xml.enabled = true
         txt.enabled = false
     }
-    include '**/*.kt'
-    include '**/*.kts'
-    exclude 'resources/'
-    exclude 'build/'
+    include ('**/*.kt', '**/*.kts')
+    exclude ('build/', 'config/')
 }
 
 dependencies {
-    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.17.0"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.15.0"
 }
