@@ -56,7 +56,7 @@ tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
         txt.enabled = false
     }
     include ('**/*.kt', '**/*.kts')
-    exclude ('build/', 'config/')
+    exclude ('build/', 'config/', 'Gemfile', 'Dangerfile')
 }
 
 dependencies {
