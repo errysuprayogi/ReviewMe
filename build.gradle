@@ -49,7 +49,7 @@ tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
     debug = false
     parallel = true
     ignoreFailures = true
-    basePath = projectSource
+//    basePath = projectSource
     reports {
         html.enabled = false
         xml.enabled = true
