@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - run: ./gradlew :app:lintDebug
+#      - run: ./gradlew :app:lintDebug
       - name: Install gem blunder
         run: sudo gem install bundler:1.17.1
       - name: Run bundle

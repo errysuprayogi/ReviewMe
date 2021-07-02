@@ -51,9 +51,9 @@ tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
     ignoreFailures = true
 //    basePath = projectSource
     reports {
-        html.enabled = false
+        html.enabled = true
         xml.enabled = true
-        txt.enabled = false
+        txt.enabled = true
     }
     include ('**/*.kt', '**/*.kts')
     exclude ('build/', 'config/', 'Gemfile', 'Dangerfile')
