@@ -1,5 +1,13 @@
 name: detekt
-
+on:
+  pull_request:
+    paths:
+      - '*/src/**'
+      - gradle/**
+      - '**.gradle'
+      - gradle.properties
+      - gradlew*
+      -
 jobs:
   detekt:
     runs-on: ubuntu-latest
