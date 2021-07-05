@@ -59,6 +59,6 @@ tasks.register("detektCheck", io.gitlab.arturbosch.detekt.Detekt) {
     exclude ('build/', 'config/', 'Gemfile', 'Dangerfile')
 }
 
-dependencies {
-    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.17.1"
-}
+//dependencies {
+//    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.17.1"
+//}
