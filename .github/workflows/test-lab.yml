@@ -15,12 +15,11 @@ jobs:
     steps:
       # Check out the repository
       - uses: actions/checkout@v2
-      
-      - name: Show list dir
-        steps:
-          - shell: bash
-          - run: ls -al
 
+      - name: Run build script
+        run: ls -al
+        shell: bash
+        
       # Run the Firebase Test Lab Action
       - name: Run tests on Firebase Test Lab
         uses: asadmansr/Firebase-Test-Lab-Action@v1.0
