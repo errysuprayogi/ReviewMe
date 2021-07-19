@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Run build script
-        run: ls -R app/build/output
+        run: ls -R app/build/outputs
         shell: bash
         
       # Run the Firebase Test Lab Action
