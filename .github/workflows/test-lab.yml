@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run build script
-        run: ls -al
+        run: ls -R app/build
         shell: bash
         
       # Run the Firebase Test Lab Action
