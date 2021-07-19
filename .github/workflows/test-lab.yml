@@ -25,10 +25,10 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew assembleDebug
 
       - name: Run build script
-        run: ls -R app/build
+        run: ls -R app/build/output
         shell: bash
         
       # Run the Firebase Test Lab Action
